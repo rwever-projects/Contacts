@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:background="@drawable/background2"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical"
+    android:id="@+id/activity_add_contact">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/title_bar"
+        android:background="#64000000"
+        android:layout_height="50dp">
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/back_arrow"
+            android:id="@+id/backButton"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contacts"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="28sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/backButton"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:text="@string/save_contact"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:id="@+id/saveButton"
+            android:background="@drawable/roundedgreenbuttonblackborder"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="false"
+            android:elevation="0dp"
+            android:layout_centerInParent="false"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@android:color/black"
+            android:textStyle="normal|bold"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/card"
+        android:elevation="17dp"
+        android:layout_centerInParent="false"
+        android:id="@+id/contactCard"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginTop="48dp"
+        android:layout_centerVertical="false"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp">
+
+        <RelativeLayout
+            android:layout_height="185dp"
+            android:layout_centerInParent="true"
+            android:layout_width="265dp">
+
+            <TextView
+                android:text="@string/new_contact"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewCardTitle"
+                android:textSize="24sp"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentStart="false"
+                android:layout_centerHorizontal="false"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentEnd="true" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewCardTitle"
+                android:id="@+id/firstNameLayout">
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_centerHorizontal="false"
+                    android:id="@+id/editTextFirstName"
+                    android:inputType="textCapSentences"
+                    android:hint="First Name"
+                    android:textSize="18sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColorLink="#AEE549"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:paddingTop="10dp"
+                    android:layout_height="40dp"
+                    android:minLines="1" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewFirstNameCaption"
+                    android:textSize="12sp"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_centerHorizontal="false"
+                    android:text="@string/first_name"
+                    android:layout_alignParentEnd="false"
+                    android:layout_width="wrap_content"
+                    android:layout_alignStart="@+id/editTextFirstName"
+                    android:layout_below="@+id/editTextFirstName"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-9dp" />
+
+                <ImageButton
+                    android:src="@drawable/undo1"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/undoButton1"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="false"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lastNameLayout"
+                android:layout_below="@+id/firstNameLayout">
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:inputType="textCapSentences"
+                    android:layout_centerHorizontal="false"
+                    android:id="@+id/editTextLastName"
+                    android:fontFeatureSettings="Last Name"
+                    android:hint="Last Name"
+                    android:textSize="18sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColorLink="#AEE549"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:layout_height="40dp"
+                    android:minLines="1" />
+
+                <TextView
+                    android:text="@string/last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewLastNameCaption"
+                    android:layout_alignStart="@+id/editTextLastName"
+                    android:layout_below="@+id/editTextLastName"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-9dp"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:src="@drawable/undo1"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/undoButton2"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="false"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/companyLayout"
+                android:layout_below="@+id/lastNameLayout">
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:inputType="textCapSentences"
+                    android:id="@+id/editTextCompany"
+                    android:hint="Company"
+                    android:layout_centerHorizontal="false"
+                    android:textSize="18sp"
+                    android:layout_alignParentEnd="true"
+                    android:textColorLink="#AEE549"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:layout_height="40dp"
+                    android:minLines="1" />
+
+                <TextView
+                    android:text="@string/company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewCompanyCaption"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-9dp"
+                    android:layout_below="@+id/editTextCompany"
+                    android:layout_alignStart="@+id/editTextCompany"
+                    android:textSize="12sp" />
+
+                <ImageButton
+                    android:src="@drawable/undo1"
+                    android:layout_alignParentEnd="true"
+                    android:id="@+id/undoButton3"
+                    android:background="@android:color/transparent"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="false"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="10dp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:src="@drawable/avatar"
+                android:id="@+id/imageView"
+                android:layout_alignWithParentIfMissing="false"
+                android:elevation="0dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/textViewCardTitle"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundborder"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:scaleX=".9"
+                android:scaleY=".9"
+                android:backgroundTint="@color/colorAccent" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

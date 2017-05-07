@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Contacts</string>
+
+    <!--View Labels-->
+    <string name="contact">Contact</string>
+    <string name="no_contacts">No Contacts.</string>
+    <string name="new_contact">New Contact</string>
+    <string name="view_by">View by → </string>
+
+    <!--Spinner Labels-->
+    <string-array name="sort_by">
+        <item>first↓last</item>
+        <item>A↓Z</item>
+        <item>A↓Z</item>
+    </string-array>
+
+    <!--onClick Labels-->
+    <string name="add_contact">Add\nContact</string>
+    <string name="delete_contact">Delete Contact</string>
+    <string name="save_contact">Save Contact</string>
+    <string name="update_contact">Update Contact</string>
+
+    <!--Toast Messages-->
+    <string name="contact_saved">&#x2713; Contact Saved</string>
+    <string name="contact_updated">&#x2713; Contact Updated</string>
+    <string name="contact_deleted">&#x2713; Contact Deleted</string>
+
+    <!--EditText Labels-->
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="company_name">Company</string>
+</resources>

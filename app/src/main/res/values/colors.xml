@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="status_bar_color">#FF000000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#a4cda4</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="black_font">#000000</color>
+
+    <!--ListView Colors-->
+    <color name="list_item_bg1">#50000000</color>
+    <color name="list_item_bg2">#35000000</color>
+    <color name="view_divider_color">#BABABA</color>
+
+    <!--Circle Background Colors-->
+    <color name="cirlce_background1">#445566</color>
+    <color name="cirlce_background2">#eeeeee</color>
+    <color name="cirlce_background3">#5599cc</color>
+    <color name="cirlce_background4">#ee7733</color>
+    <color name="cirlce_background5">#aaaaaa</color>
+
+    <integer-array name="circle_background_array">
+        <item>@color/cirlce_background1</item>
+        <item>@color/cirlce_background2</item>
+        <item>@color/cirlce_background3</item>
+        <item>@color/cirlce_background4</item>
+        <item>@color/cirlce_background5</item>
+    </integer-array>
+
+</resources>

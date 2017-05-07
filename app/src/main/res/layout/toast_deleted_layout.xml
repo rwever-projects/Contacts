@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/custom_toast_container"
+    android:background="@drawable/toast_saved_confirmation"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:layout_alignParentBottom="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:background="#FF3333"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="@string/contact_deleted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toastText"
+                android:layout_gravity="center_vertical|center_horizontal|center"
+                android:textSize="18sp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
